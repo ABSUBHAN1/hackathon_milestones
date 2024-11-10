@@ -1,25 +1,89 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editable Resume Builder</title>
+    <title>Reflexsales Group</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Editable Resume Builder</h1>
-<form id="resume-form">
+
+    
+   <form id="resume-form">
+
+    <div class="logo-heading">
+        <h1>ROUTING FORM</h1>
+        <img src="R_logo.png" alt="Logo" class="logo"> <!-- Replace with the actual logo file path -->
+        
+    </div>
+
 <fieldset>
-    <legend>Personal Information</legend> 
-    <label for="name">Name</label>
-    <input type="text" id="name" placeholder="Enter Your Name" required>
+        <legend>SPECIAL INSTRUCTION</legend>
+        <div class="form-container">
+
+                <input type="text" id="warehouse-name"> </fieldset>
+
+    <fieldset>
+        <legend>CONTACT INFORMATION</legend>
+        <div class="form-container">
+            <div class="column">
+                <label for="warehouse-name">Warehouse Name:</label>
+                <input type="text" id="warehouse-name" placeholder="Enter Your Warehouse Name" required>
+
+                <label for="contact-name">Contact Name:</label>
+                <input type="text" id="contact-name" placeholder="Enter Your Contact Name" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" placeholder="Enter Your Address" required>
+
+                <label for="city-state-zip">City, State, Zip:</label>
+                <input type="text" id="city-state-zip" placeholder="Enter Your City, State, Zip" required>
+
+                <label for="routing-completed-by">Routing Completed By:</label>
+                <input type="text" id="routing-completed-by" placeholder="Enter Routing Completed By" required>
+            </div>
+
+            <div class="column">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" placeholder="Enter Your Phone" required>
+
+                <label for="fax">Fax:</label>
+                <input type="text" id="fax" placeholder="Enter Your Fax" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+
+                <label for="business-hours">Business Hours:</label>
+                <input type="text" id="business-hours" placeholder="______ to ______" required>
+
+                <label for="signature">Signature:</label>
+                <input type="text" id="signature">
+            </div>
+        </div>
+    </fieldset>
+
+
+
+
+
+    <div class="button-container">
+    <button type="submit"><b>Submit</b></button>
+    <button id="download-pdf"><b>Download as PDF</b></button>
+</div>
+
+</form>
+
+
     
-    <label for="email">Email</label>
-    <input type="text" id="email" placeholder="Enter Your Email" required>
+
+
+
+
     
-    <label for="phone">Phone</label>
-    <input type="text" id="phone" placeholder="Enter Your phone No:" required>
-</fieldset>
+<!--
+
 
 <fieldset>
     <legend>Education</legend> 
@@ -37,17 +101,26 @@
     <legend>Skills</legend>
     <label for="skills">Skills:</label> 
     <textarea id="skills" placeholder="Enter Your Skills" rows="4"></textarea> 
-</fieldset>
+</fieldset>-->
 
-<button type="submit"><b>Generate Resume</b></button> 
-</form>
-<br>
 
-<!-- Dynamic and Editable Resume -->
+
+<!-- Dynamic and Editable Resume 
 <div id="resume-display" contenteditable="true">
-    <!-- Resume will be generated below -->
-</div>
+    <!-- Resume will be generated below 
+</div> -->
+<!-- Section for the shareable link and download option-->
+<!--  <div id="shareable-link-container" style="display: none;">
+<h2>shareable link</h2>
+<p>Here is your unique link to view or edit your resume</p>
+<a href="#" id="shareable-link" target="_blank"></a>-->
 
+
+
+
+
+
+</div>
 <script src="script.js"></script>    
 </body>
 </html>
