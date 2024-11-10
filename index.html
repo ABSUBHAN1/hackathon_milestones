@@ -3,75 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Interactive Resume</title>
+    <title>Dynamic Resume Builder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="resume-container">
-        <!-- Left Section -->
-        <div class="left-section">
-            <img src="WhatsApp Image 2024-05-27 at 7.27.14 AM (1).jpeg" alt="profile picture" class="profile-picture">
-            <section id="objective">
-                <h3 style="color: black">Career Objective</h3>
-                <p style="text-align: justify; hyphens: auto;">
-                    A motivated IT student with intermediate programming skills, eager to contribute to innovative projects and further develop technical expertise in a dynamic environment focused on growth and learning.
-                </p>
-            </section> 
+<h1>Dynamic Resume Builder</h1>
+<form id="resume-form">
+<fieldset>
+    <legend>Personal Information</legend> 
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter Your Name" required>
+    
+    <label for="email">Email</label>
+    <input type="text" id="email" placeholder="Enter Your Email" required>
+    
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" placeholder="Enter Your phone No:" required>
+</fieldset>
 
-            <section id="certifications">
-                <h3 style="color: black">Certifications</h3>
-                <p><b>ACCP Pro</b> from Aptech Learning</p>
-                <p><b>Artificial Intelligence, Web 3.0 & Metaverse</b> From Governor House Karachi (Ongoing)</p>
-            </section>
-        </div>
+<fieldset>
+    <legend>Education</legend> 
+    <label for="education">Education:</label> 
+    <textarea id="education" placeholder="Enter Your Education" rows="4"></textarea>
+</fieldset>
 
-        <!-- Right Section -->
-        <div class="right-section">
-            <h1>Static Interactive Resume</h1>
+<fieldset>
+    <legend>Experience</legend>
+    <label for="experience">Experience:</label>
+    <textarea id="experience" placeholder="Enter Your Working Experience" rows="4"></textarea>
+</fieldset>
+    
+<fieldset>
+    <legend>Skills</legend>
+    <label for="skills">Skills:</label> 
+    <textarea id="skills" placeholder="Enter Your Skills" rows="4"></textarea> 
+</fieldset>
 
-            <!-- Personal Information -->
-            <section id="personal-info">
-                <h3>Personal Information</h3>
-                <p><b>Name:</b> Muhammad Subhan</p>
-                <p><b>Contact #:</b> 0319-0306199</p>
-                <p><b>Email:</b> <a href="mailto:abdulsubhann011@gmail.com">abdulsubhann011@gmail.com</a></p>
-            </section>
+<button type="submit"><b>Generate Resume</b></button> 
+</form>
+<br>
 
-            <!-- Education Section -->
-            <section id="education">
-                <h3>Education</h3>
-                <p><b>Intermediate:</b> From Board of Intermediate Education Karachi (2019-2021)</p>
-                <p><b>Matriculation:</b> From Board of Secondary Education Karachi (2017-2019)</p>
-            </section>
+<!-- Dynamic Resume -->
+<div id="resume-display">
+    <!-- Resume will be generated below -->
+</div>
 
-            <!-- Skill Section -->
-            <section id="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>MS Office</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Communication Skills</li>
-                </ul>
-            </section>
-
-            <!-- Work Experience Section -->
-            <section id="work-experience">
-                <h3>Work Experience</h3>
-                <p><b>Freelance Web Developer</b></p>
-            </section>
-
-            <!-- Specialty Section -->
-            <section id="specialty">
-                <h3>Specialty</h3>
-                <p>Expertise in creating responsive, user-friendly websites with a strong focus on front-end development, UI/UX design, and graphic design. Skilled in producing visually appealing designs and interactive elements that enhance user engagement.</p>
-            </section>
-
-            <!-- Button to toggle Skills Section -->
-            <button id="toggle-skills"><b>Hide/Show Skills</b></button>
-        </div> 
-    </div>
-    <script src="script.js"></script>
+<script src="script.js"></script>    
 </body>
 </html>
